@@ -9,11 +9,11 @@ const db = require('./database/db')
 // db 
 
 // routers
-
+const authRouter = require('./routes/auth')
 // error handlers
 
 // routes
-
+app.use('api/v1/auth', authRouter)
 // middlewares
 app.use(express.json())
 // app.use(bodyParser.json())
